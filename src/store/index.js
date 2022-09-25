@@ -21,24 +21,25 @@ export default createStore({
 
     obtenerCouses: async function({ commit }){
 
-        const response = await axios.get('https://freecours3s.herokuapp.com/courses/')
+        const response = 
+        await axios.get('https://freecourses-node-production.up.railway.app/courses')
 
               if(response.status==200){//VERFICAR SI RESPONDIO LA API REST BIEN
                 commit('SET_POSTS',response.data) //ENVIA LOS VALORES OBTENIDOS A LA VARIABLE COURSE
               }else{// SI PRODUCE UN ERROR SE IMPRIME EN CONSOLA
                 console.log(response);
               }
-          
+              console.log("object",process.env.API);
     },
 
 //AGREGAR UN CURSO EN LA  API REST
 
     addCourses:async function( { commit },new_Courses) {
 
-          const response = await axios.post(`https://freecours3s.herokuapp.com/courses/`,new_Courses)
+          const response = await axios.post(`https://freecourses-node-production.up.railway.app/courses`,new_Courses)
 
               if(response.status==200){//VERFICAR SI RESPONDIO LA API REST BIEN
-                  const obtener = await axios.get('https://freecours3s.herokuapp.com/courses/')//SE VUELE PEDIR DE NUEVO LOS DATOS   
+                  const obtener = await axios.get('https://freecourses-node-production.up.railway.app/courses')//SE VUELE PEDIR DE NUEVO LOS DATOS   
                   commit('SET_POSTS',obtener.data)//ENVIA LOS VALORES OBTENIDOS A LA VARIABLE COURSE  
               }else{// SI PRODUCE UN ERROR SE IMPRIME EN CONSOLA
                   console.log(response);
@@ -49,10 +50,10 @@ export default createStore({
 //ACTULIZAR UN CURSO EN LA  API REST
     putCourses:async function( { commit },new_Courses) {
 
-        const response = await axios.put(`https://freecours3s.herokuapp.com/courses/`,new_Courses)
+        const response = await axios.put('https://freecourses-node-production.up.railway.app/courses',new_Courses)
 
             if(response.status==200){//VERFICAR SI RESPONDIO LA API REST BIEN
-                const obtener = await axios.get('https://freecours3s.herokuapp.com/courses/') //SE VUELE PEDIR DE NUEVO LOS DATOS    
+                const obtener = await axios.get('https://freecourses-node-production.up.railway.app/courses') //SE VUELE PEDIR DE NUEVO LOS DATOS    
                 commit('SET_POSTS',obtener.data)//ENVIA LOS VALORES OBTENIDOS A LA VARIABLE COURSE 
             }else{// SI PRODUCE UN ERROR SE IMPRIME EN CONSOLA
                 console.log(response);
@@ -61,11 +62,11 @@ export default createStore({
     },
 //ELIMINAR UN CURSO EN LA  API REST
     deleleteCourses:async function( { commit },id) {
-
-      const response = await axios.delete(`https://freecours3s.herokuapp.com/?id=${id}`)
+// https://freecourses-node-production.up.railway.app/courses
+      const response = await axios.delete(`https://freecourses-node-production.up.railway.app/courses/?id=${id}`)
 
           if(response.status==200){//VERFICAR SI RESPONDIO LA API REST BIEN
-            const obtener = await axios.get('https://freecours3s.herokuapp.com/') //SE VUELE PEDIR DE NUEVO LOS DATOS    
+            const obtener = await axios.get('https://freecourses-node-production.up.railway.app/courses') //SE VUELE PEDIR DE NUEVO LOS DATOS    
             commit('SET_POSTS',obtener.data)//ENVIA LOS VALORES OBTENIDOS A LA VARIABLE COURSE 
           }else{// SI PRODUCE UN ERROR SE IMPRIME EN CONSOLA
             console.log(response);
