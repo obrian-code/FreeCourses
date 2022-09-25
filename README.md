@@ -24,17 +24,17 @@ CSS
 
 ## Instalación
 
-    Clonar el repositorio   
+Clonar el repositorio   
     
     ```
     git clone https://github.com/QuaDDom/snow-net
     ```
-    Instalar paquetes
+Instalar paquetes
     
     ```
     npm install
     ```
-    Ejecutar código
+Ejecutar código
 
     ```
     npm run dev
