@@ -1,4 +1,4 @@
-# freecourses
+# Free Courses
 Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis para Udemy platzi edteam crehana Itoo Domestica etc.
 
 # Sobre
@@ -7,13 +7,13 @@ Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis, es
 
 # Construido con
 
-✓ Vue
-✓ Vuex
-✓ Axios
-✓ Bootstrap
-✓ SweetAlert2
-✓ HTML
-✓ CSS
+✓ Vue<br>
+✓ Vuex<br>
+✓ Axios<br>
+✓ Bootstrap<br>
+✓ SweetAlert2<br>
+✓ HTML<br>
+✓ CSS<br>
 
 
 ## Instalación
@@ -21,7 +21,7 @@ Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis, es
 Clonar el repositorio   
     
     ```
-    git clone https://github.com/QuaDDom/snow-net
+    git clone https://github.com/obrian-code/FreeCourses.git
     ```
 Instalar paquetes
     
@@ -34,8 +34,13 @@ Ejecutar código
     npm run serve
     ```
 
+## Muestra   
 
-### Backend
+ ```
+ fr33cours3es.netlify.app/#/ 
+ ```
+ 
+### Backend 
 ```
 https://github.com/obrian-code/FreeCourses-node
 ```
