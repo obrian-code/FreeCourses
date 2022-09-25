@@ -29,7 +29,7 @@ export default createStore({
               }else{// SI PRODUCE UN ERROR SE IMPRIME EN CONSOLA
                 console.log(response);
               }
-              console.log("object",process.env.API);
+              // console.log("object",process.env.API);
     },
 
 //AGREGAR UN CURSO EN LA  API REST

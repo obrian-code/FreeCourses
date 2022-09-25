@@ -1,27 +1,44 @@
 # freecourses
+Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis para Udemy platzi edteam crehana Itoo Domestica etc.
 
-## Project setup
+# Sobre
+Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis, es pequeño proyecto que aportará a la comudidad y en un plazo determiado.
+
+
+# Construido con
 ```
-npm install
+Vue
+
+Vuex
+
+Axios
+
+Bootstrap
+
+SweetAlert2
+
+HTML
+
+CSS
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Instalación
 
-### Compiles and minifies for production
-```
-npm run build
-```
+    Clonar el repositorio   
+    
+    ```
+    git clone https://github.com/QuaDDom/snow-net
+    ```
+    Instalar paquetes
+    
+    ```
+    npm install
+    ```
+    Ejecutar código
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    ```
+    npm run dev
+    ```
 
 
 ### Backend

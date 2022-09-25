@@ -68,8 +68,8 @@ p i {
         <p><i class="fab fa-vuejs" style="color: green"></i>Vue</p>
         <p><i class="fab fa-vuejs" style="color: green"></i>Vuex</p>
         <p><i class="fa-brands fa-js" style="color: red"></i>Axios</p>
-        <p><i class="fa-brands fa-js" style="color: green"></i>Node</p>
-        <p><i class="fab fa-php" style="color: blueviolet"></i> Php</p>
+        <!-- <p><i class="fa-brands fa-js" style="color: green"></i>Node</p> -->
+        <!-- <p><i class="fab fa-php" style="color: blueviolet"></i> Php</p> -->
         <p><i class="fab fa-bootstrap" style="color: purple"></i>Bootstrap</p>
         <p>
           <i class="fab fa-js-square" style="color: blueviolet"></i>SweetAlert2
