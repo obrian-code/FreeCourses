@@ -6,21 +6,15 @@ Free Courses es una plataforma diseñada para subir  Cursos y Cupones Gratis, es
 
 
 # Construido con
-```
-Vue
 
-Vuex
+✓ Vue
+✓ Vuex
+✓ Axios
+✓ Bootstrap
+✓ SweetAlert2
+✓ HTML
+✓ CSS
 
-Axios
-
-Bootstrap
-
-SweetAlert2
-
-HTML
-
-CSS
-```
 
 ## Instalación
 
@@ -37,7 +31,7 @@ Instalar paquetes
 Ejecutar código
 
     ```
-    npm run dev
+    npm run serve
     ```
 
 
